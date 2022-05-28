@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Data"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="ID"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="Name"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/student_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="Surname"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="Father's Name"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_national_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="NIC"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="DD/MM/YYYY"
+                android:minHeight="48dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/Linear_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:         "
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Female"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save_data"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="Save"
+                android:textColor="@color/white"
+                app:backgroundTint="#222019" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
